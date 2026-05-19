@@ -14,6 +14,7 @@ services:
       - WEBHOOK_URL=https://n8n.secure-svr.net/
       - GENERIC_TIMEZONE=America/Chicago
       - N8N_METRICS=true
+      - N8N_TRUST_PROXY=true
     volumes:
       - n8n_data:/home/node/.n8n
       - ./config:/config:ro
